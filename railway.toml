@@ -1,0 +1,6 @@
+[build]
+  image = "Dockerfile"
+  dockerfilePath = "Dockerfile"
+
+[deploy]
+  port = 443
