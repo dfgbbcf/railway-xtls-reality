@@ -1,0 +1,33 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [{
+    "port": 443,
+    "protocol": "vless",
+    "settings": {
+      "clients": [
+        {
+          "id": "3ef6dd01-7ecf-48e1-aa10-b8275add38dd",
+          "flow": "xtls-rprx-vision"
+        }
+      ],
+      "decryption": "none"
+    },
+    "streamSettings": {
+      "network": "grpc",
+      "security": "reality",
+      "realitySettings": {
+        "show": false,
+        "dest": "www.speedtest.net:443",
+        "xver": 0,
+        "serverNames": ["www.speedtest.net"],
+        "privateKey": "SuoAwVHZisJYrE2cM8ov4SXnLgZbdAsU9eODjlFElXE",
+        "shortIds": ["50175c035ee132"]
+      }
+    }
+  }],
+  "outbounds": [{
+    "protocol": "freedom"
+  }]
+}
