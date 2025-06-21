@@ -14,20 +14,19 @@
       ],
       "decryption": "none"
     },
-    "streamSettings": {
-      "network": "grpc",
-      "security": "reality",
-      "realitySettings": {
-        "show": false,
-        "dest": "www.speedtest.net:443",
-        "xver": 0,
-        "serverNames": ["www.speedtest.net"],
-        "privateKey": "SuoAwVHZisJYrE2cM8ov4SXnLgZbdAsU9eODjlFElXE",
-        "shortIds": ["50175c035ee132"]
-      }
-    }
-  }],
-  "outbounds": [{
-    "protocol": "freedom"
-  }]
-}
+   "streamSettings": {
+-    "network": "grpc",
++    "network": "grpc",
++    "grpcSettings": {
++      "serviceName": "rly"
++    },
+     "security": "reality",
+     "realitySettings": {
+       "show": false,
+       "dest": "www.speedtest.net:443",
+       "xver": 0,
+       "serverNames": ["www.speedtest.net"],
+       "privateKey": "SuoAwVHZisJYrE2cM8ov4SXnLgZbdAsU9eODjlFElXE",
+       "shortIds": ["50175c035ee132"]
+     }
+   }
